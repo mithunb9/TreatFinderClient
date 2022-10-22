@@ -5,11 +5,12 @@ import MapView from "react-native-maps";
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text>Hello !</Text>
       <MapView
+        style={styles.map}
         initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
+          latitude: 33.07889,
+          longitude: -96.791129,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
@@ -26,5 +27,12 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
+  },
+  map: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
   },
 });
