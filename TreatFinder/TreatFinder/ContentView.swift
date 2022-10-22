@@ -14,6 +14,10 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("TreatFinder")
+            TabView(selection: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Selection@*/.constant(1)/*@END_MENU_TOKEN@*/) {
+                Text("Insert Map once Finished").tabItem { Text("Live Map") }.tag(1)
+                Text("Insert Rating Cards").tabItem { Text("Rating") }.tag(2)
+            }
         }
         .padding()
     }
