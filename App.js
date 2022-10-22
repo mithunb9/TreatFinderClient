@@ -1,12 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import MapView from "react-native-maps";
+import { Callout } from "react-native-maps";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello !</Text>
-      <MapView
+      {/* <MapView
         style={styles.map}
         initialRegion={{
           latitude: 33.07889,
@@ -14,7 +15,9 @@ export default function App() {
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
-      />
+      >
+        <Callout coordinate={{ latitude: 33.07889, longitude: -96.791129 }} />
+      </MapView> */}
 
       <StatusBar style="auto" />
     </View>
